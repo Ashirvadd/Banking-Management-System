@@ -33,12 +33,14 @@ This project is a Banking Management System written in C, allowing both users an
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/Banking-Management-System.git
+   git clone https://github.com/Ashirvadd/Banking-Management-System.git
    cd Banking-Management-System
 2. **Compile the Code: Use GCC or any C compiler**:
-   gcc banking_system.c -o banking_system
-3. **Run the Program**:
-   ./banking_system
+   ```bash
+   gcc bankmanagement.c -o bankmanagement
+4. **Run the Program**:
+   ```bash
+   ./bankmanagement
 Note: You must have user_accounts.txt in the same directory, or the program will create one when you register the first user account.
 
 ## Usage
@@ -66,16 +68,25 @@ Logout - Logout from the user account.
 The project code comprises various functions to manage accounts and handle user/admin interactions. Here's a breakdown:
 
 Data Structure: struct user - Manages account details like phone number, account number, password, and balance using a linked list structure.
+
 Core Functionalities:
+
 Register Account: Registers a new account after checking if the account number already exists.
+
 Load Accounts: Loads existing account details from user_accounts.txt at the start of the program.
+
 Admin Functions: Includes functions to view all accounts, create a new account, and delete accounts.
+
 User Functions: Allows checking balance, depositing, withdrawing, transferring, and changing passwords.
+
 Data Persistence:
 Account details are stored in user_accounts.txt. Changes made during a session are saved when the program exits.
+
 At program startup, it loads account details from the file, enabling seamless data persistence.
+
 File Structure
 banking_system.c - Main source code.
+
 user_accounts.txt - Stores user details in the format: Account_Number Phone_Number Password Balance.
 
 
@@ -92,22 +103,26 @@ struct user {
 };
 
 // Load accounts from file
-void loadAccountsFromFile() {
+void loadAccountsFromFile() 
+{
     // Implementation to read from file and create linked list
 }
 
 // Register new account
-void registerAccount() {
+void registerAccount() 
+{
     // Account registration and file writing logic
 }
 
 // Admin login function with options
-void adminLogin() {
+void adminLogin() 
+{
     // Admin functionalities: view, create, delete accounts
 }
 
 // User login function with menu options
-void userLogin() {
+void userLogin() 
+{
     // User functionalities: check balance, deposit, withdraw, transfer, change password
 }
 
